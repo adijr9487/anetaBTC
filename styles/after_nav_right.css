@@ -1,0 +1,49 @@
+.main-right{
+    padding: 60px;
+    width: 90%;
+}
+.main-right-head{
+}
+.main-right-head-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-para{
+    width: 50%;
+    margin: 0 5px;
+}
+.main-right-bottom{
+    display: flex;
+}
+.main-right-head-bottom{
+    display: inline;
+}
+.main-right-head .main-head-bottom, .main-right-head .main-head-highligth{
+    width: 50%;
+    font-size: 4rem;
+    display: inline;
+}
+.main-head{
+    width: 50%;
+    font-size: 4rem;
+    display: inline;
+    text-decoration: underline wavy var(--light-turqish);
+}
+.main-head-highligth{
+    color: var(--light-turqish);
+}
+.doll-svg{
+    width: 90%;
+    background-blend-mode: normal;
+}
+.list-element-model{
+    display: flex;
+}
+.list-element-model img{
+    height: 100px;
+}
+.horizon-rule{
+    height: 5px;
+    background-color: var(--light-turqish);
+}
