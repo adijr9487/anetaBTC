@@ -13,8 +13,8 @@
     background: linear-gradient(to bottom, var(--dark-turqish), var(--ex-dark-turquish));
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
     border-top: 3px solid var(--light-turqish);
-    display: flex;
     padding: 20px 0;
+    /* display: none; */
 }
 .nav-list{
     list-style: none;
