@@ -1,0 +1,72 @@
+.footer-section{
+    display: flex;
+    padding: 40px;
+    background: black;
+    color: white;
+}
+.logo-section{
+    width: 30%;
+}
+.logo-section h2{
+    font-size: 3rem;
+    margin: 20px 0;
+    font-family: 'Nunito', sans-serif;
+}
+.logo-section p{
+    font-family: system-ui;
+}
+.options-section{
+    width: 45%;
+    display: flex;
+    font-family: system-ui;
+    color: white;
+    justify-content: space-between;
+}
+.options-sub-section{
+    padding: 10px 20px;
+    /* width: 30%; */
+    box-sizing: border-box;
+}
+.options-sub-section .option-head{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.options-sub-section li{
+    margin-left: 20px;
+}
+.options-sub-section a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-section{
+    width: 25%;
+    padding: 40px 20px;
+}
+.social-icons{
+    display: flex;
+    justify-content: flex-end;
+}
+.social-section .fa-brands{
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 7px;
+    color: white;
+    transition: 0.3s;
+}
+.social-section .fa-brands:hover{
+    color: yellow;
+}
+.social-section p{
+    font-family: system-ui;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+/* @media(max-width: 1200px){
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+    }   
+} */

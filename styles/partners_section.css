@@ -1,0 +1,98 @@
+.partners-section{
+    background: black;
+    margin-top: -5px;
+}
+.partners-content{
+    background-color: var(--light-turqish);
+    display: flex;
+    justify-content: space-between;
+    clip-path: polygon( 0 13%, 77% 13%, 83% 6%, 92% 6%, 100% 0%, 100% 100%, 0 100% );
+    padding: 300px 50px 100px 50px;
+}
+.part-section-left{
+    width: 45%;
+    padding: 40px;
+}
+.part-section-left h3{
+    font-family: 'Nunito',  sans-serif;
+    font-size: 4rem;
+    margin: 20px 0;
+}
+.part-section-left p{
+    font-family: system-ui;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.part-section-left button{
+    padding: 20px 30px;
+    font-family: system-ui;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(240, 240, 12);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--dark-turqish);
+}
+.part-section-left button:hover{
+    background-color: rgb(255, 255, 13);
+}
+.part-section-right{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.all-partners{
+    border-radius: 50%;
+}
+.all-partners h3.center-head{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    border-radius: 50%;
+    padding: 100px;
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+}
+.partners-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partners-list-item{
+    margin: 40px 3px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    color: white;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+}
+.partners-list-item img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.partners-list-item h4{
+    font-family: system-ui;
+    padding: 0 10px;
+}
+.partners-list-item:nth-child(1){
+    transform: rotate(-20deg) translateX(-20px);
+}
+.partners-list-item:nth-child(2){
+    transform: translateY(-50px) ;
+}
+.partners-list-item:nth-child(5){
+    transform: translateY(50px) ;
+}
+.partners-list-item:nth-child(6){
+    transform: rotate(-20deg) ;
+}

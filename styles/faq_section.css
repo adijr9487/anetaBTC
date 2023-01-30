@@ -2,6 +2,7 @@
     margin-top: -5px;
     background-color: black;
     color: white;
+    padding: 60px;
 }
 .faq-header{
     width: 70%;
@@ -21,6 +22,7 @@
     transform-origin: bottom center;
     padding-bottom: 85%;
     position: absolute;
+    pointer-events: none;
 }
 .faq-header h3:nth-child(1){
     transform: rotate(-25deg);
@@ -110,6 +112,23 @@
 .list-element-model{
     display: flex;
     align-items: center;
+    transition: 0.3s;
+}
+.list-element-model i{
+    transition: 0.3s;
+}
+.list-element-model:hover{
+    background-color: var(--light-turqish);
+}
+.list-element-model:hover h3{
+    color: black;
+}
+.list-element-model:hover p{
+    -webkit-text-stroke-color: black;
+}
+.list-element-model:hover i{
+    color: black;
+    transform: rotate(90deg);
 }
 .faq-list-item-model{
     width: 90%;
@@ -129,4 +148,45 @@
 .list-element-model .fa-solid{
     font-size: 3rem;
     color: var(--light-turqish);
+}
+@media(max-width: 1250px){
+    .faq-header h3{
+        font-size: 3rem;
+    }
+    .faq-header p{
+        margin-top: 150px;
+    }
+}
+@media(max-width: 1150px){
+    .faq-header h3{
+        font-size: 2.5rem;
+    }
+    .faq-header p{
+        margin-top: 100px;
+    }
+    .faq-list-element-content{
+        font-size: 1.5rem;
+    }
+    .faq-list-item-model{
+        width: 100%;
+        margin: 100px 0;
+        padding: 40px;
+    }
+    .faq-list-element-content h3{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 850px){
+    .faq-header h3{
+        font-size: 2rem;
+    }
+    .faq-header p{
+        font-size: 0.7rem;
+    }
+    .faq-list-element-content h3{
+        font-size: 1rem;
+    }
+    .faq-list-item-model{
+        padding: 10px;
+    }
 }
