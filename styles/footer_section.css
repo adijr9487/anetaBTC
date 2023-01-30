@@ -64,9 +64,64 @@
     text-align: right;
 }
 
-/* @media(max-width: 1200px){
-    .footer-section{
+@media(max-width: 1200px){
+    .social-section .fa-brands{
+        font-size: 2rem;
+    }
+    .social-section p{
+        font-size: 1rem;
+    }
+    .options-sub-section .option-head{
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+}
+@media(max-width: 950px){
+    .social-section .fa-brands{
+        font-size: 2rem;
+    }
+    .social-section p{
+        font-size: 1rem;
+    }
+    .options-sub-section .option-head{
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+    .options-sub-section{
+        padding: 5px;
+    }
+    .options-sub-section li{
+        font-size: 0.7rem;
+    }
+    .social-section{
+        padding: 40px 0px;
+    }
+}
+
+@media(max-width: 700px){
+    .footer-section {
+        flex-flow: column;
+    }
+    .logo-section {
         display: flex;
-        flex-direction: column;
-    }   
-} */
+        width: 100%;
+        align-items: center;
+    }
+    .logo-section h2{
+        font-size: 2rem;
+        margin: 20px;
+    }
+    .options-section{
+        width: 100%;
+    }
+    .social-section{
+        width: 100%;
+        padding: 20px 0 0 0;
+    }
+}
+
+@media(max-width: 500px){
+    .footer-section {
+        padding: 10px;
+    }
+}

@@ -91,3 +91,17 @@
     );
 }
 
+@media(max-width: 500px){
+    .navbar{
+        padding: 15px 20px;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .hamburger div{
+        height: 4px;
+        width: 2rem;
+        margin: 7px 0;
+    }
+}
+

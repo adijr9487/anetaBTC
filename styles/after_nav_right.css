@@ -31,6 +31,7 @@
     font-weight: 1000;
 }
 .main-head {
+    font-size: 5rem;
     width: 50%;
     font-size: inherit;
     font-family: 'Nunito', sans-serif;
@@ -167,5 +168,22 @@
     }
     .index{
 
+    }
+}
+
+@media(max-width: 500px){
+    .main-right{
+        padding: 10px 10px 50px 10px;
+        width: 100%;
+
+    }
+    .list-element-content img{
+        height: 50px;
+    }
+    .list-item-des h3{
+        font-size: 0.7rem;
+    }
+    .list-item-des p{
+        font-size: 0.7rem;
     }
 }

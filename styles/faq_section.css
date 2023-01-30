@@ -190,3 +190,24 @@
         padding: 10px;
     }
 }
+
+@media(max-width: 500px){
+    .faq-section{
+        padding: 30px 10px;
+    }
+    .list-element-model{
+        padding: 0;
+    }
+    .faq-head-title h3{
+        font-size: 1.2rem;
+    }
+    .faq-list-item-model{
+        margin-top: 20px;
+    }
+    .faq-list-element-content{
+        padding: 20px 12px;
+    }
+    .list-element-model .fa-solid{
+        font-size: 2rem;
+    }
+}
