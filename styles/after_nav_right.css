@@ -31,7 +31,7 @@
     font-weight: 1000;
 }
 .main-head {
-    font-size: 5rem;
+    font-size: 4rem;
     width: 50%;
     font-size: inherit;
     font-family: 'Nunito', sans-serif;
@@ -100,6 +100,12 @@
     margin-right: 20px;
 }
 
+
+@media(min-width: 1350px){
+    .main-head {
+        font-size: 4.6rem;
+    }
+}
 
 @media(max-width: 1350px){
     .main-right{
