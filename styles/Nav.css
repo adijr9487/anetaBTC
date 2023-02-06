@@ -18,7 +18,22 @@
     display: flex;
     justify-content: space-between;
 }
-
+.nav-options{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.nav-options i{
+    margin: 10px;
+    font-size: 2.5rem;
+    color: #e1e1e1 ;
+}
+.nav-options i:hover{
+    color: white ;
+}
+.nav-options .fa-bars{
+    display: none;
+}
 .logo{
     color: white;
     font-family: sans-serif;
@@ -89,6 +104,15 @@
     , 0% 30%
     
     );
+}
+
+@media(max-width: 1350px){
+    .nav-options .fa-bars{
+        display: initial;
+    }
+    .nav-options .fa-right-to-bracket{
+        display: none;
+    }
 }
 
 @media(max-width: 500px){

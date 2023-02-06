@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- style links  -->
     <link rel="stylesheet" href="styles/Nav.css">
     <link rel="stylesheet" href="styles/after_nav_left.css">
@@ -13,24 +14,33 @@
     <link rel="stylesheet" href="styles/faq_section.css">
     <link rel="stylesheet" href="styles/partners_section.css">
     <link rel="stylesheet" href="styles/footer_section.css">
-    
+    <link rel="stylesheet" href="styles/form.css">
+
     <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/9de13af330.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous">
-    
+
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Lato:wght@400;700&family=Nunito:wght@1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bevan&family=Lato:wght@400;700&family=Nunito:wght@1000&display=swap"
+        rel="stylesheet">
+
+
+    <!-- action file  -->
+    <script src="action.js" defer></script>
 
     <title>AnetaBTC</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
     </style>
 </head>
+
 <body>
 
     <!-- header  -->
@@ -40,26 +50,83 @@
             <!-- logo  -->
             <p class="logo">logo</p>
             <!-- hamburger  -->
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="nav-options">
+                <i class="fa-solid fa-right-to-bracket login"></i>
+                <i class="fa-solid fa-bars" id="hamburger"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
             </div>
 
-        
-        
         </div>
         <div class="horizon"> </div>
-        
+
+        <!-- login section   -->
+        <form action="" class="login-form activeForm">
+            <div class="backdrop">
+
+            </div>
+            <div class="container">
+                <div class="container-head">
+                    <h1>Sign Up</h1>
+                    <i class="fa-solid fa-xmark "></i>
+                </div>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+
+                <div class="block">
+                    <label for="first"><b>First Name</b></label>
+                    <input class="input first-name" type="text" placeholder="First Name" name="first-name" required>
+                    <label class="err first-name-err"></label>
+                </div>
+
+                <div class="block">
+                    <label for="last"><b>Last Name</b></label>
+                    <input class="input last-name" type="text" placeholder="Last Name" name="last-name">
+                    <label class="err last-name-err"></label>
+                </div>
+
+                <div class="block">
+                    <label for="email"><b>Email</b></label>
+                    <input class="input email" type="text" placeholder="Enter Email" name="email" required>
+                    <label class="err email-err"></label>
+                </div>
+
+                <div class="block">
+                    <label for="dob"><b>DOB</b></label>
+                    <input class="input dob" type="date" placeholder="DOB" name="dob" required><br /><br />
+                    <label class="err dob-err"></label>
+                </div>
+
+                <div class="block">
+                    <label for="psw"><b>Password</b></label>
+                    <input class="input password" type="password" placeholder="Enter Password" name="password" required>
+                    <label class="err password-err"></label>
+                </div>
+
+                <div class="block">
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input class="input confirm-password" type="password" placeholder="Repeat Password"
+                        name="confirm-password" required>
+                    <label class="err confirm-password-err"></label>
+                </div>
+                
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+
 
         <!-- After nav bar  -->
-        <div class="header-main">        
-            <div class="navigation-left">
+        <div class="header-main">
+            <div class="navigation-left" id="navbar">
                 <ul class="nav-list">
                     <li class="nav-item"><i class="fa-solid fa-house"></i>Home</li>
                     <li class="nav-item"><i class="fa-solid fa-user-group"></i>About</li>
                     <li class="nav-item"><i class="fa-solid fa-database"></i>Community</li>
                     <li class="nav-item"><i class="fa-brands fa-steam-symbol"></i>Servise</li>
+                    <li class="nav-item nav-login login"><i class="fa-solid fa-right-to-bracket"></i>Login</li>
+
                 </ul>
             </div>
 
@@ -72,57 +139,61 @@
                         <h1 class="main-head"> Decentralized</h1>
                     </div>
                     <div class="main-right-head-bottom">
-                        <h1 class="main-head-two"> Decentralized</h1><h1 class="main-head-bottom"> On Chain <p class="main-head-highligth"> Wrapped </p>Bitcoin</h1>
+                        <h1 class="main-head-two"> Decentralized</h1>
+                        <h1 class="main-head-bottom"> On Chain <p class="main-head-highligth"> Wrapped </p>Bitcoin</h1>
                     </div>
                 </div>
                 <div class="main-right-bottom">
                     <div class="doll-model">
-                        <img class="doll-svg" src="images/doll.svg" alt="doll svg" width="40%"/>
+                        <img class="doll-svg" src="images/doll.svg" alt="doll svg" width="40%" />
                     </div>
                     <div class="list-item-model">
                         <ul class="list-item">
-                            <hr class="horizon-rule"/>
+                            <hr class="horizon-rule" />
                             <li class="list-element-model">
                                 <p class="index">01</p>
                                 <div class="list-element-content">
                                     <img src="images/btc.png" alt="list-image" />
                                     <div class="list-item-des">
                                         <h3>Wrap Bitcoin on Ergo</h3>
-                                        <p>Guaranteed and verifiable through transparent and accessible smart contracts.</p>
+                                        <p>Guaranteed and verifiable through transparent and accessible smart contracts.
+                                        </p>
                                     </div>
                                 </div>
                             </li>
-                            <hr class="horizon-rule"/>
+                            <hr class="horizon-rule" />
                             <li class="list-element-model">
                                 <p class="index">02</p>
                                 <div class="list-element-content">
                                     <img src="images/lap.png" alt="list-image" />
                                     <div class="list-item-des">
                                         <h3>Security and Privacy</h3>
-                                        <p>Leverage built-in privacy and security tools of the most decentralized blockchains.</p>
+                                        <p>Leverage built-in privacy and security tools of the most decentralized
+                                            blockchains.</p>
                                     </div>
                                 </div>
                             </li>
-                            <hr class="horizon-rule"/>
+                            <hr class="horizon-rule" />
                             <li class="list-element-model">
                                 <p class="index">03</p>
                                 <div class="list-element-content">
                                     <img src="images/img3.png" alt="list-image" />
                                     <div class="list-item-des">
                                         <h3>Research-driven</h3>
-                                        <p>A meticulous approach, ensuring correctness with constant oversigth and testing.</p>
+                                        <p>A meticulous approach, ensuring correctness with constant oversigth and
+                                            testing.</p>
                                     </div>
                                 </div>
                             </li>
-                            <hr class="horizon-rule"/>
+                            <hr class="horizon-rule" />
                         </ul>
                     </div>
                 </div>
-    
+
             </div>
         </div>
 
-        
+
 
 
     </div>
@@ -132,7 +203,8 @@
         <div class="about-yellow">
             <div class="about-header">
                 <h1>About Us</h1>
-                <p>This is an overview of what Market Ledger will providing, and for stretegic reason we will only reveal the rest as we progress with our development process and are ready to market them.</p>
+                <p>This is an overview of what Market Ledger will providing, and for stretegic reason we will only
+                    reveal the rest as we progress with our development process and are ready to market them.</p>
             </div>
 
             <div class="about-list-section">
@@ -206,15 +278,16 @@
                 <h3>s</h3>
 
             </div>
-            
-            <p>The demand and supply are responsible for the fluctuating prices of crypto in the market. 
-                Since the prices are quite high for the ordinary people, the crypto investors can by stakes in fractions.
+
+            <p>The demand and supply are responsible for the fluctuating prices of crypto in the market.
+                Since the prices are quite high for the ordinary people, the crypto investors can by stakes in
+                fractions.
                 Unlike share market, they can even by very small amount of crypto at a time.</p>
         </div>
         <div class="faq-content">
             <div class="faq-list-item-model">
                 <ul class="faq-list-item">
-                    <hr class="horizon-rule"/>
+                    <hr class="horizon-rule" />
                     <li class="list-element-model">
                         <p class="index">01</p>
                         <div class="faq-list-element-content">
@@ -222,7 +295,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-down"></i>
                     </li>
-                    <hr class="horizon-rule"/>
+                    <hr class="horizon-rule" />
                     <li class="list-element-model">
                         <p class="index">02</p>
                         <div class="faq-list-element-content">
@@ -230,7 +303,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-down"></i>
                     </li>
-                    <hr class="horizon-rule"/>
+                    <hr class="horizon-rule" />
                     <li class="list-element-model">
                         <p class="index">03</p>
                         <div class="faq-list-element-content">
@@ -238,7 +311,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-down"></i>
                     </li>
-                    <hr class="horizon-rule"/>
+                    <hr class="horizon-rule" />
                     <li class="list-element-model">
                         <p class="index">04</p>
                         <div class="faq-list-element-content">
@@ -246,7 +319,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-down"></i>
                     </li>
-                    <hr class="horizon-rule"/>
+                    <hr class="horizon-rule" />
                     <li class="list-element-model">
                         <p class="index">05</p>
                         <div class="faq-list-element-content">
@@ -254,7 +327,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-down"></i>
                     </li>
-                    <hr class="horizon-rule"/>
+                    <hr class="horizon-rule" />
                     <li class="list-element-model">
                         <p class="index">06</p>
                         <div class="faq-list-element-content">
@@ -262,7 +335,7 @@
                         </div>
                         <i class="fa-solid fa-arrow-down"></i>
                     </li>
-                    <hr class="horizon-rule"/>
+                    <hr class="horizon-rule" />
                 </ul>
             </div>
         </div>
@@ -317,7 +390,7 @@
     <div class="footer-section">
         <div class="logo-section">
             <h2>Logo</h2>
-            <p>                
+            <p>
                 AnetaBTC is a decentralized, secure portocol that allows
                 users to unlock the value of their bitcoin on Ergo and Cardano.
             </p>
@@ -328,10 +401,10 @@
                     AntenaBTC
                 </h3>
                 <ul>
-                    <li><a href="#" class="f-link">Team</a></li> 
-                    <li><a href="#" class="f-link">Docs</a></li> 
-                    <li><a href="#" class="f-link">News & Updates</a></li> 
-                    <li><a href="#" class="f-link">Tokenomics</a></li> 
+                    <li><a href="#" class="f-link">Team</a></li>
+                    <li><a href="#" class="f-link">Docs</a></li>
+                    <li><a href="#" class="f-link">News & Updates</a></li>
+                    <li><a href="#" class="f-link">Tokenomics</a></li>
                 </ul>
             </div>
             <div class="options-sub-section">
@@ -339,10 +412,10 @@
                     Resources
                 </h3>
                 <ul>
-                    <li><a href="#" class="f-link">Media Kit</a></li> 
-                    <li><a href="#" class="f-link">Litepaper</a></li> 
-                    <li><a href="#" class="f-link">Roadmap</a></li> 
-                    <li><a href="#" class="f-link">Neta Liquidity Fund</a></li> 
+                    <li><a href="#" class="f-link">Media Kit</a></li>
+                    <li><a href="#" class="f-link">Litepaper</a></li>
+                    <li><a href="#" class="f-link">Roadmap</a></li>
+                    <li><a href="#" class="f-link">Neta Liquidity Fund</a></li>
                 </ul>
             </div>
             <div class="options-sub-section">
@@ -350,7 +423,7 @@
                     Foundation
                 </h3>
                 <ul>
-                    <li><a href="#" class="f-link">Contact</a></li> 
+                    <li><a href="#" class="f-link">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -367,4 +440,5 @@
         </div>
     </div>
 </body>
+
 </html>
